@@ -12,6 +12,7 @@ def parse_python_releases():
         release_data = []
 
         for release in releases:
+            # Извлечение данных из заданных элементов
             try:
                 version_element = release.query_selector(".release-number a")
                 date_element = release.query_selector(".release-date")
